@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><script>
+    var a = prompt("Nhap a voi: ax^2 + bx +c = 0");
+    var b = prompt("Nhap b voi: "+a+"x^2 + bx +c = 0");
+
+    var c = prompt("Nhap c voi: "+a+"x^2 + "+b+"x +c = 0");
+    console.log(a);
+    if (a %1 != 0 ){
+        alert("moi nhap lai");
+    }else if (b%1!=0) {
+        alert("moi nhap lai");
+    }else if (c%1 !=0){
+        alert("moi nhap lai")
+    }else {
+        let delta=((b*b)-4*a*c);
+        if (delta <0){
+            alert("Phuong tirnh vo nghiem");
+
+        }else if (delta =0){
+            alert("Phuong trinh co nghiem kep la: " + (-b/2*a))
+        }else {
+            let x1 = ((-b)+Math.sqrt(delta))/(2*a);
+            let x2 = ((-b)-Math.sqrt(delta))/(2*a);
+            alert("Phuong trinh co hai nghiem la: " + x1 +" va "+x2);
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
